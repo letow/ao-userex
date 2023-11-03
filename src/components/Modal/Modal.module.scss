@@ -1,0 +1,75 @@
+.Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000033;
+
+    & .wrapper {
+        border-radius: 16px;
+        position: relative;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        background-color: #fff;
+        width: 500px;
+    }
+}
+
+.info {
+    list-style-type: none;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 0.63fr 1fr;
+
+    &__item {
+        color: #8189a3;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin: 10px 0;
+        font-size: 16px;
+
+        &__title {
+            font-size: 18px;
+            color: #262c40;
+        }
+    }
+
+    & .additional {
+        margin-top: 30px;
+        grid-column: 1 / -1;
+    }
+}
+
+.cross {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 22px;
+    right: 20px;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        content: "";
+        width: 25px;
+        height: 3.5px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background-color: #262c40;
+        color: #262c40;
+        border-radius: 3px;
+    }
+
+    &::after {
+        transform: rotate(45deg);
+    }
+    &::before {
+        transform: rotate(-45deg);
+    }
+}

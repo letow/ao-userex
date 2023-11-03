@@ -1,0 +1,24 @@
+.App {
+    background-color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+
+.wrapper {
+    max-width: 1121px;
+    margin: 65px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 32px;
+}
+
+h1 {
+    color: #262c40;
+    font-size: 24px;
+    font-family: "Proxima Nova Bold";
+    font-weight: normal;
+}
